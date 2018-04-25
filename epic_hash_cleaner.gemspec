@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['fernando.sainz@i22.de']
 
   spec.summary       = 'Removes recursively nil and empty elements from a hash'
-  spec.homepage      = 'https://github.com/i22-digitalagentur/epic_hash_cleaner'
+  spec.homepage      = 'https://github.com/i22-digitalagentur/epic-hash-cleaner'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"

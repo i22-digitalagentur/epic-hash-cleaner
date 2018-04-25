@@ -1,5 +1,5 @@
 # EpicHashCleaner
-[![Build Status](https://travis-ci.org/i22-digitalagentur/epic_hash_cleaner.svg?branch=master)](https://travis-ci.org/i22-digitalagentur/epic_hash_cleaner)
+[![Build Status](https://travis-ci.org/i22-digitalagentur/epic-hash-cleaner.svg?branch=master)](https://travis-ci.org/i22-digitalagentur/epic-hash-cleaner)
 
 Removes recursively nil and empty elements from a hash
 
@@ -38,7 +38,7 @@ Or install it yourself as:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/i22-digitalagentur/epic_hash_cleaner
+Bug reports and pull requests are welcome on GitHub at https://github.com/i22-digitalagentur/epic-hash-cleaner
 
 
 ## License
