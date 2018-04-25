@@ -17,6 +17,9 @@ EpicHashCleaner.clean { a: [nil], b: [nil, '', [{}], { a: [''] }] }
 
 EpicHashCleaner.clean { a: { b: { c: [{ d: ['', 1], e: nil }] } } }
 # => { a: { b: { c: [{ d: [1] }] } } }
+
+EpicHashCleaner.clean nil
+# => {}
 ```
 
 ## Installation

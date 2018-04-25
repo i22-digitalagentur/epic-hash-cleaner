@@ -19,5 +19,9 @@ describe EpicHashCleaner do
       input = { a: { b: { c: [{ d: ['', 1], e: nil }] } } }
       assert_equal({ a: { b: { c: [{ d: [1] }] } } }, ::EpicHashCleaner.clean(input))
     end
+
+    it 'returns an empty hash for nil' do
+      assert_equal({}, ::EpicHashCleaner.clean(nil))
+    end
   end
 end

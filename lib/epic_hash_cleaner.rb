@@ -4,6 +4,7 @@ module EpicHashCleaner
   module_function
 
   def clean(hash)
+    return {} if hash.nil?
     clean_hash(hash)
   end
 
