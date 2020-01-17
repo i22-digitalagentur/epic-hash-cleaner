@@ -22,9 +22,16 @@ module EpicHashCleaner
     blank?(value) if value != false
   end
 
-  # based on File activesupport/lib/active_support/core_ext/object/blank.rb
+  # blank? has different meaning depending on the class
+  # See https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/object/blank.rb
+  #
+  # we use directly #blank? if defined, if not we replicate the active support
+  # implementation for Object#blank?
+  #
   # rubocop:disable Style/DoubleNegation
   def blank?(value)
+    return value.blank? if value.respond_to?(:blank?)
+
     value.respond_to?(:empty?) ? !!value.empty? : !value
   end
   # rubocop:enable Style/DoubleNegation

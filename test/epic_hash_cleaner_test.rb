@@ -10,8 +10,8 @@ describe EpicHashCleaner do
       input = { a: nil, b: '', c: [], d: {} }
       assert_equal({}, ::EpicHashCleaner.clean(input))
 
-      input = { a: false, b: ' ' }
-      assert_equal({ a: false, b: ' ' }, ::EpicHashCleaner.clean(input))
+      input = { a: false }
+      assert_equal({ a: false }, ::EpicHashCleaner.clean(input))
 
       input = { a: [nil], b: [nil, '', [{}], { a: [''] }] }
       assert_equal({}, ::EpicHashCleaner.clean(input))

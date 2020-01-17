@@ -10,7 +10,7 @@ EpicHashCleaner.clean { a: nil, b: '', c: [], d: {} }
 # => {}
 
 EpicHashCleaner.clean { a: false, b: ' ' }
-# => { a: false, b: ' ' }
+# => { a: false }
 
 EpicHashCleaner.clean { a: [nil], b: [nil, '', [{}], { a: [''] }] }
 # => {}
